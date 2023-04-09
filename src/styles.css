@@ -1,0 +1,213 @@
+header {
+  background-image: url("/images/IPhoneWallpapers.png");
+  background-size: contain;
+  padding: 12%;
+  color: white;
+  text-align: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 24px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  padding-top: 28px;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+}
+
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 12px;
+}
+
+.container-paragraph {
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  text-align: justify;
+  color: #636363;
+  font-weight: 700;
+  background: #e5e5e5;
+}
+
+.line {
+  text-align: "center";
+  width: 200px;
+  height: 10px;
+  border-width: 1.5px;
+  color: #3a3a3a;
+}
+
+.container-title {
+  background: #eeeeee;
+}
+
+.black-title {
+  font-weight: 400;
+  color: black;
+}
+
+.white-title {
+  color: white;
+  font-weight: 400;
+}
+
+.grid-pectures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% repeat(5, 20%);
+  justify-items: center;
+  background-color: #3a3a3a;
+  color: #636363;
+}
+
+.grid-pectures .grid-title {
+  grid-column: 1 / span 2;
+  background-color: black;
+  margin-top: 5vw;
+  align-self: center;
+  width: 90%;
+  height: 30vh;
+  font-size: 3vw;
+}
+
+.grid-pectures .grid-title .line {
+  border-color: #3a3a3a;
+  z-index: 0;
+}
+
+.grid-pectures .p-col32,
+h1 {
+  text-align: left;
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+
+.grid-pectures h1 {
+  margin-top: 10vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-pectures .p-col32 {
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+  font-size: 18px;
+  color: #3a3a3a;
+}
+
+.grid-pectures .p-col41 {
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+  font-size: 18px;
+  color: #c3c1c1;
+}
+
+.grid-pectures .col31,
+.col32,
+.col41,
+.col42,
+.col51,
+.col52 {
+  height: 70vh;
+  justify-self: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.grid-pectures .col11,
+.col12,
+.col21,
+.col22 {
+  height: 100vh;
+}
+
+.grid-pectures .col11,
+.col12,
+.col21,
+.col22,
+.col31,
+.col32,
+.col41,
+.col42,
+.col51,
+.col52 {
+  width: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-pectures .col11,
+.col21,
+.col31,
+.col41,
+.col51 {
+  margin-left: 5vw;
+  justify-self: end;
+}
+
+.grid-pectures .col12,
+.col22,
+.col32,
+.col42,
+.col52 {
+  margin-right: 5vw;
+  justify-self: start;
+}
+
+.grid-pectures .col51,
+.col52 {
+  margin-bottom: 5vw;
+}
+
+.grid-pectures .col11 {
+  background-image: url("/images/pexels1.jpg");
+}
+
+.grid-pectures .col12 {
+  background-image: url("/images/pexels2.jpg");
+}
+
+.grid-pectures .col21 {
+  background-image: url("/images/pexels3.jpg");
+  margin-bottom: 10%;
+}
+
+.grid-pectures .col22 {
+  background-image: url("/images/pexels4.jpg");
+  margin-bottom: 10%;
+}
+
+.grid-pectures .col31 {
+  background-image: url("/images/pexels5.jpg");
+}
+
+.grid-pectures .col32 {
+  background-color: white;
+}
+
+.grid-pectures .col42 {
+  background-image: url("/images/pexels6.jpg");
+}
+
+.grid-pectures .col51 {
+  background-image: url("/images/pexels7.jpg");
+}
+
+.grid-pectures h6 {
+  color: white;
+}
