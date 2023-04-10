@@ -1,55 +1,76 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #3a3a3a;
+  --tertiary-color: #636363;
+  --quaternary-color: black;
+  --color-gradient: linear-gradient(
+    315deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  --primary-font-inter: "Inter", sans-serif;
+  --secondary-font-arial: Arial, Helvetica, sans-serif;
+}
+
 header {
   background-image: url("/images/IPhoneWallpapers.png");
   background-size: contain;
   padding: 12%;
-  color: white;
+  color: var(--primary-color);
   text-align: center;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  color: white;
-  font-size: 24px;
+  background: var(--color-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--secondary-font-arial);
+  font-size: 2vw;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--primary-font-inter);
 }
 
 .title {
-  padding-top: 28px;
+  padding-top: 2vw;
+  font-family: var(--secondary-font-arial);
+  font-weight: 200;
 }
 
 h1 {
   font-weight: 900;
   text-align: center;
+  font-family: var(--secondary-font-arial);
+  font-weight: 200;
 }
 
 h6 {
-  font-family: "Inter", sans-serif;
+  font-family: var(--primary-font-inter);
   font-weight: 600;
   letter-spacing: 5px;
-  color: #3a3a3a;
+  color: var(--secondary-color);
   text-align: center;
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 .container-paragraph {
-  padding-left: 125px;
-  padding-right: 125px;
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
   text-align: justify;
-  color: #636363;
+  color: var(--tertiary-color);
   font-weight: 700;
   background: #e5e5e5;
 }
 
 .line {
   text-align: "center";
-  width: 200px;
-  height: 10px;
+  width: 10vw;
+  height: 1vw;
   border-width: 1.5px;
-  color: #3a3a3a;
+  color: var(--secondary-color);
 }
 
 .container-title {
@@ -58,11 +79,11 @@ h6 {
 
 .black-title {
   font-weight: 400;
-  color: black;
+  color: var(--quaternary-color);
 }
 
 .white-title {
-  color: white;
+  color: var(--primary-color);
   font-weight: 400;
 }
 
@@ -71,14 +92,15 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20% repeat(5, 20%);
   justify-items: center;
-  background-color: #3a3a3a;
-  color: #636363;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .grid-pectures .grid-title {
   grid-column: 1 / span 2;
-  background-color: black;
+  background-color: var(--quaternary-color);
   margin-top: 5vw;
+  padding-top: 2.5vw;
   align-self: center;
   width: 90%;
   height: 30vh;
@@ -86,33 +108,34 @@ h6 {
 }
 
 .grid-pectures .grid-title .line {
-  border-color: #3a3a3a;
+  border-color: var(--secondary-color);
   z-index: 0;
 }
 
 .grid-pectures .p-col32,
-h1 {
+.p-col41,
+h2 {
   text-align: left;
   margin-left: 15vh;
   margin-right: 15vh;
 }
 
-.grid-pectures h1 {
+.grid-pectures h2 {
   margin-top: 10vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--secondary-font-arial);
 }
 
 .grid-pectures .p-col32 {
   margin-bottom: 10vh;
   margin-top: 5vh;
-  font-size: 18px;
-  color: #3a3a3a;
+  font-size: 1.1vw;
+  color: var(--secondary-color);
 }
 
 .grid-pectures .p-col41 {
   margin-bottom: 10vh;
   margin-top: 5vh;
-  font-size: 18px;
+  font-size: 1.1vw;
   color: #c3c1c1;
 }
 
@@ -122,18 +145,8 @@ h1 {
 .col42,
 .col51,
 .col52 {
-  height: 70vh;
+  width: 100%;
   justify-self: center;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-}
-
-.grid-pectures .col11,
-.col12,
-.col21,
-.col22 {
-  height: 100vh;
 }
 
 .grid-pectures .col11,
@@ -146,9 +159,16 @@ h1 {
 .col42,
 .col51,
 .col52 {
-  width: 90%;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.grid-pectures .col11,
+.col12,
+.col21,
+.col22 {
+  width: 90%;
 }
 
 .grid-pectures .col11,
@@ -156,7 +176,6 @@ h1 {
 .col31,
 .col41,
 .col51 {
-  margin-left: 5vw;
   justify-self: end;
 }
 
@@ -165,7 +184,6 @@ h1 {
 .col32,
 .col42,
 .col52 {
-  margin-right: 5vw;
   justify-self: start;
 }
 
@@ -197,7 +215,7 @@ h1 {
 }
 
 .grid-pectures .col32 {
-  background-color: white;
+  background-color: var(--primary-color);
 }
 
 .grid-pectures .col42 {
@@ -209,5 +227,42 @@ h1 {
 }
 
 .grid-pectures h6 {
-  color: white;
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+footer .social-links a i {
+  color: var(--primary-color);
+  font-size: 2vw;
+}
+
+footer .logo {
+  padding: 1vw;
+  font-size: 2vw;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .grid-pectures .col11,
+  .col12,
+  .col21,
+  .col22 {
+    height: 10vh;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 760px) {
+  .grid-pectures .col11,
+  .col12,
+  .col21,
+  .col22 {
+    height: 30vh;
+    width: 40vw;
+  }
 }
