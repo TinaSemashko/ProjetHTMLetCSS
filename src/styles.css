@@ -252,16 +252,6 @@ footer .logo {
   text-align: center;
 }
 
-/* @media (max-width: 576px) {
-  .grid-pictures .col11,
-  .col12,
-  .col21,
-  .col22 {
-    height: 10vh;
-    width: 30vw;
-  }
-} */
-
 @media (max-width: 760px) {
   .grid-pictures {
     grid-template-columns: 1fr;
@@ -336,12 +326,4 @@ footer .logo {
   .grid-pictures .col21 {
     margin-bottom: 0;
   }
-
-  /* .grid-pictures .col11,
-  .col12,
-  .col21,
-  .col22 {
-    height: 30vh;
-    width: 40vw;
-  } */
 }
